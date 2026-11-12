@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Product — Seric</title>
+<meta name="description" content="A piece of Seric silk, in detail.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='7' fill='%23231D16'/><text x='16' y='23' font-family='Georgia,serif' font-size='19' fill='%23B08D57' text-anchor='middle'>S</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body data-page="product">
+<main class="container">
+  <nav class="breadcrumbs" aria-label="Breadcrumb">
+    <a href="shop.html">Shop</a><span>·</span><span id="crumb-cat"></span><span>·</span><span id="crumb-name"></span>
+  </nav>
+
+  <div class="pdp">
+    <div class="pdp-gallery">
+      <div class="gallery-main" id="gallery-main"></div>
+      <div class="thumbs" id="gallery-thumbs"></div>
+    </div>
+
+    <div class="pdp-info">
+      <p class="eyebrow" id="pdp-cat"></p>
+      <h1 id="pdp-name"></h1>
+      <p class="pdp-price" id="pdp-price"></p>
+      <p class="pdp-desc" id="pdp-desc"></p>
+
+      <p class="opt-label">Colour</p>
+      <div class="swatches" id="pdp-swatches"></div>
+
+      <p class="opt-label">Size</p>
+      <div class="size-row" id="pdp-sizes"></div>
+
+      <div class="pdp-cta">
+        <button class="btn btn--solid" id="pdp-add" data-add="">Add to Cart</button>
+        <button class="btn" data-wishlist>♡ Save</button>
+      </div>
+
+      <div class="accordion" id="pdp-acc">
+        <div class="acc-item open">
+          <button class="acc-btn">The Silk<span>−</span></button>
+          <div class="acc-body">Cut from 22-momme mulberry silk, reeled in small, traceable lots and woven on site. The high momme gives the fabric weight without heaviness — it drapes, it does not float.</div>
+        </div>
+        <div class="acc-item">
+          <button class="acc-btn">Care<span>+</span></button>
+          <div class="acc-body">Gentle wash at 30°C with a silk detergent, or dry clean. Drip-dry in the shade. Iron on the reverse at the lowest heat. The full ritual lives in the journal.</div>
+        </div>
+        <div class="acc-item">
+          <button class="acc-btn">Shipping &amp; Returns<span>+</span></button>
+          <div class="acc-body">Ships in 2–4 days, free over $150. Thirty-day returns on unworn pieces, in the original wrap.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <section class="section">
+    <div class="section-head">
+      <p class="eyebrow">Keep going</p>
+      <h2>You may also like</h2>
+    </div>
+    <div class="product-grid" id="related"></div>
+  </section>
+</main>
+<script src="js/data.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
